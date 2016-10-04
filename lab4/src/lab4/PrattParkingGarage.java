@@ -83,6 +83,6 @@ public class PrattParkingGarage
     }
     System.out.println("***************************");
     System.out.println("Grand total duwe is: ");
-    System.out.println("grandTotalDueFromCustomer");
+    System.out.println(grandTotalDueFromCustomer);
     }// end main()
 }// end class
