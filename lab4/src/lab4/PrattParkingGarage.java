@@ -16,6 +16,7 @@ public class PrattParkingGarage
     double EXTRA_CHARGE = 0.0;
     double coupon = 0.0, tip = 0.0;
     double flatTax = 3.00, totalDueFromCust = 0.0;
+    double grandTotalDueFromCustomer = 0.0;
     
     System.out.println("");
     System.out.println("");
@@ -78,7 +79,10 @@ public class PrattParkingGarage
     System.out.println("***************************");
     System.out.println("run again(Y or N)?");
     answer = sc.next().charAt(0);
+    grandTotalDueFromCustomer += totalDueFromCust;
     }
     System.out.println("***************************");
+    System.out.println("Grand total duwe is: ");
+    System.out.println("grandTotalDueFromCustomer");
     }// end main()
 }// end class
