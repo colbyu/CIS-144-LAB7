@@ -1,7 +1,7 @@
 package lab4;
 
 import java.util.Scanner;
-// Sammy Student, Programmer
+// Colby Underhill, Programmer 
 public class PrattParkingGarage
 {
     static Scanner sc = new Scanner(System.in);
@@ -17,6 +17,8 @@ public class PrattParkingGarage
     double coupon = 0.0, tip = 0.0;
     double flatTax = 3.00, totalDueFromCust = 0.0;
     double grandTotalDueFromCustomer = 0.0;
+    double grandTotalTipDueFromCustomer = 0.0;
+    double grandTotalTaxDueFromCustomer = 0.0;
     
     System.out.println("");
     System.out.println("");
@@ -40,7 +42,7 @@ public class PrattParkingGarage
     System.out.println("time difference " + (timeDiff));
     
     System.out.println("rate code: (F or M)");
-    rateCode = sc.next().charAt(0);
+    rateCode = sc.next().toUpperCase().charAt(0);
     System.out.println("rate code: " + rateCode);
     if (rateCode == 'F')
     {
@@ -63,7 +65,7 @@ public class PrattParkingGarage
     totalDueFromCust += flatTax;
     
     System.out.println("special event(Y or N)?");
-    specEvent = sc.next().charAt(0);
+    specEvent = sc.next().toUpperCase().charAt(0);
     if(specEvent == 'Y') EXTRA_CHARGE = 10;
     totalDueFromCust += EXTRA_CHARGE;
     System.out.println("coupon amount");
@@ -80,8 +82,12 @@ public class PrattParkingGarage
     System.out.println("run again(Y or N)?");
     answer = sc.next().charAt(0);
     grandTotalDueFromCustomer += totalDueFromCust;
+    grandTotalTaxDueFromCustomer += flatTax;
+    grandTotalTipDueFromCustomer += tip;
     }
     System.out.println("***************************");
     System.out.printf("Total amount due: $%.2f\n", grandTotalDueFromCustomer);
+    System.out.printf("Total Tax due: $%.2f\n", grandTotalTaxDueFromCustomer);
+    System.out.printf("Total tips due: $%.2f\n", grandTotalTipDueFromCustomer);
     }// end main()
 }// end class
