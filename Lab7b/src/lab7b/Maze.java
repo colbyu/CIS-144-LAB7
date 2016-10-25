@@ -116,33 +116,32 @@ static boolean checkYourMove()
 	    return advance;
             }
     if(currentCell == 5 && advance == true)
-		{
+	{
 	if (myMove == 'W')
-		{
-			advance = false;
-			System.out.println("SORRY, there is no return");
-			return advance;
-		}
+	    {
+	    advance = false;
+	    System.out.println("SORRY, there is no return");
+	    return advance;
+	    }
 	if (myMove == 'A')
-		{
-			advance = false;
-			System.out.println("SORRY, there is no return");
-			return advance;
-		}
+            {
+	    advance = false;
+	    System.out.println("SORRY, there is no return");
+	    return advance;
+	    }
 	if (myMove == 'D')
-		{
-			currentCell = 6;
-                        advance = true;
-			System.out.println("continue through the maze");
-			return advance;
-		}
+	    {
+	    currentCell = 6;
+            advance = true;
+	    System.out.println("continue through the maze");
+	    return advance;
+	    }
 	if (myMove == 'S')
-		{
-			
-			advance = false;
-			System.out.println("try again");
-			return advance;
-		}
+	    {
+	    advance = false;
+	    System.out.println("try again");
+	    return advance;
+	    }
     if(currentCell == 6 && advance == true)
 		{
 	if (myMove == 'W')
