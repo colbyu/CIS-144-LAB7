@@ -143,87 +143,81 @@ static boolean checkYourMove()
 	    return advance;
 	    }
     if(currentCell == 6 && advance == true)
-		{
+	{
 	if (myMove == 'W')
-		{
-			advance = false;
-			System.out.println("SORRY, there is no return");
-			return advance;
-		}
+            {
+            advance = false;
+            System.out.println("SORRY, there is no return");
+            return advance;
+            }
 	if (myMove == 'A')
-		{
-			advance = false;
-			System.out.println("SORRY, there is no return");
-			return advance;
-		}
+            {
+            advance = false;
+            System.out.println("SORRY, there is no return");
+            return advance;
+            }
 	if (myMove == 'D')
-		{
-			advance = false;
-			System.out.println("Try again");
-			return advance;
-		}
+            {
+            advance = false;
+            System.out.println("Try again");
+            return advance;
+            }
 	if (myMove == 'S')
-		{
-			currentCell = 9;
-			advance = true;
-			System.out.println("continue through the maze");
-			return advance;
-		}
-
+            {
+            currentCell = 9;
+            advance = true;
+            System.out.println("continue through the maze");
+            return advance;
+            }
     if(currentCell == 9 && advance == true)
-		{
+	{
 	if (myMove == 'W')
-		{
-			advance = false;
-			System.out.println("SORRY, there is no return");
-			return advance;
-		}
+            {
+            advance = false;
+            System.out.println("SORRY, there is no return");
+            return advance;
+            }
 	if (myMove == 'A')
-		{
-			advance = false;
-			System.out.println("SORRY, there is no return");
-			return advance;
-		}
+            {
+            advance = false;
+            System.out.println("SORRY, there is no return");
+            return advance;
+            }
 	if (myMove == 'D')
-		{
-			advance = false;
-			System.out.println("Try again!");
-			return advance;
-		}
+            {
+            advance = false;
+            System.out.println("Try again!");
+            return advance;
+            }
 	if (myMove == 'S')
-		{
-			currentCell = 9;
-			advance = true;
-			System.out.println("Youm have found the exit");
-			return advance;
-		}
+            {
+            currentCell = 9;
+            advance = true;
+            System.out.println("Youm have found the exit");
+            return advance;
+            }
 	}
-        
-	return advance;
+    return advance;
 	// end program menu
- }// end method
+    }// end method
 static void MoveLeft()
-{
-   System.out.println("you moved to the left");
-   
-}//end method
+    {
+    System.out.println("you moved to the left");
+    }//end method
 static void MoveRight()
-{
-	 System.out.println("you moved to the right");
-	
-}//end method
+    {
+    System.out.println("you moved to the right");
+    }//end method
 static void MoveUp()
-{
-	System.out.println("you moved up (forward)");
-	
-}//end method
+    {
+    System.out.println("you moved up (forward)");
+    }//end method
 static void MoveDown()
-{
-	System.out.println("you moved down (downward)");
-	
-}//end method
+    {   
+    System.out.println("you moved down (downward)");
+    }//end method
 static void mazeStatus()
-{
-	System.out.println("current position: cell " + currentCell);
-}//end method
+    {
+    System.out.println("current position: cell " + currentCell);
+    }//end method
 }// end class
