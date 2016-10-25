@@ -129,7 +129,91 @@ if (myMove == 'D')
 			System.out.println("continue through the maze");
 			return advance;
 		}
+                if(currentCell == 5 && advance == true)
+		{
+		if (myMove == 'W')
+		{
+			advance = false;
+			System.out.println("try again");
+			return advance;
+		}
+		if (myMove == 'A')
+		{
+			advance = false;
+			System.out.println("SORRY, there is no return");
+			return advance;
+		}
+		if (myMove == 'D')
+		{
+			advance = false;
+			System.out.println("continue through the maze");
+			return advance;
+		}
+		if (myMove == 'S')
+		{
+			currentCell = 5;
+			advance = true;
+			System.out.println("continue through the maze");
+			return advance;
+		}
+ 
+		if(currentCell == 6 && advance == true)
+		{
+		if (myMove == 'W')
+		{
+			advance = false;
+			System.out.println("try again");
+			return advance;
+		}
+		if (myMove == 'A')
+		{
+			advance = false;
+			System.out.println("SORRY, there is no return");
+			return advance;
+		}
+		if (myMove == 'D')
+		{
+			advance = false;
+			System.out.println("continue through the maze");
+			return advance;
+		}
+		if (myMove == 'S')
+		{
+			currentCell = 5;
+			advance = true;
+			System.out.println("continue through the maze");
+			return advance;
+		}
+
+		if(currentCell == 9 && advance == true)
+		{
+		if (myMove == 'W')
+		{
+			advance = false;
+			System.out.println("try again");
+			return advance;
+		}
+		if (myMove == 'A')
+		{
+			advance = false;
+			System.out.println("SORRY, there is no return");
+			return advance;
+		}
+		if (myMove == 'D')
+		{
+			advance = false;
+			System.out.println("continue through the maze");
+			return advance;
+		}
+		if (myMove == 'S')
+		{
+			currentCell = 5;
+			advance = true;
+			System.out.println("continue through the maze");
+			return advance;
+		}
 	}
+        
 	return advance;
 	// end program menu
  }// end method
