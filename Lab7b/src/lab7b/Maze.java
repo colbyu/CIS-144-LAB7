@@ -134,7 +134,7 @@ if (myMove == 'D')
 		if (myMove == 'W')
 		{
 			advance = false;
-			System.out.println("try again");
+			System.out.println("SORRY, there is no return");
 			return advance;
 		}
 		if (myMove == 'A')
@@ -145,15 +145,16 @@ if (myMove == 'D')
 		}
 		if (myMove == 'D')
 		{
-			advance = false;
+			currentCell = 6;
+                        advance = true;
 			System.out.println("continue through the maze");
 			return advance;
 		}
 		if (myMove == 'S')
 		{
-			currentCell = 5;
-			advance = true;
-			System.out.println("continue through the maze");
+			
+			advance = false;
+			System.out.println("try again");
 			return advance;
 		}
  
@@ -162,7 +163,7 @@ if (myMove == 'D')
 		if (myMove == 'W')
 		{
 			advance = false;
-			System.out.println("try again");
+			System.out.println("SORRY, there is no return");
 			return advance;
 		}
 		if (myMove == 'A')
@@ -174,12 +175,12 @@ if (myMove == 'D')
 		if (myMove == 'D')
 		{
 			advance = false;
-			System.out.println("continue through the maze");
+			System.out.println("Try again");
 			return advance;
 		}
 		if (myMove == 'S')
 		{
-			currentCell = 5;
+			currentCell = 9;
 			advance = true;
 			System.out.println("continue through the maze");
 			return advance;
@@ -190,7 +191,7 @@ if (myMove == 'D')
 		if (myMove == 'W')
 		{
 			advance = false;
-			System.out.println("try again");
+			System.out.println("SORRY, there is no return");
 			return advance;
 		}
 		if (myMove == 'A')
@@ -202,14 +203,14 @@ if (myMove == 'D')
 		if (myMove == 'D')
 		{
 			advance = false;
-			System.out.println("continue through the maze");
+			System.out.println("Try again!");
 			return advance;
 		}
 		if (myMove == 'S')
 		{
-			currentCell = 5;
+			currentCell = 9;
 			advance = true;
-			System.out.println("continue through the maze");
+			System.out.println("Youm have found the exit");
 			return advance;
 		}
 	}
